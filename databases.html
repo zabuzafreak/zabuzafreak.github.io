@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Databases Narrative</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My ePortfolio</h1>
+    <nav>
+      <a href="index.html">Self-Assessment</a>
+      <a href="code-review.html">Code Review</a>
+      <a href="software-design.html">Software Design Narrative</a>
+      <a href="algorithms.html">Algorithms and Data Structures Narrative</a>
+      <a href="databases.html">Databases Narrative</a>
+      <a href="artifacts.html">Artifacts</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Databases Narrative</h2>
+
+    <p>
+      The artifact used for all of my enhancements is the full-stack website built during my full-stack development course. This enhancement is related to the database. While my database was functionally already altered and complete for the new project, I have changed how the leaderboard functions to store data directly in the database. 
+    </p>
+    <p>
+	    Previously, the leaderboard was calculated at the time of request, which saves on database processing and reduces load on it, however, this does create a situation where my website is actually quite vulnerable to attacks (and if someone wants to host data requested from the API on another site, it would eat through my bandwidth in no time at all). This new approach now stores the data as a collection in the database, and it is updated whenever a tournament is completed, or a new round paired.
+    </p>
+    <p>
+      This enhancement meets all the outcomes from my planning as well as fundamentally improves the stack as a whole, allowing for better scalability into the future. The project is by no means ready for launch. There is still a lot of front-end work to be done, however, I cleaned up the handoff from the express site to the angular SPA in regards to the login flow. Now the SPA properly only displays information relevant to the user. So, for logging in and user registration, the user no longer sees “DCGO WEDNESDAYS ADMIN” at the top of the page, nor the add events or event list buttons. Likewise, in the express site, a user only sees the login/register button until they have logged in. Then they see the logout and profile button. The user profile now properly displays the user’s information in the SPA (whereas previously it simply linked to the SPA which was not displaying custom information depending on the user).
+    </p>
+    <p>
+      Honestly, I keep putting off the front-end work because while wiring and completing the back end is more complex, it’s not as tedious. While some things can be changed in the express setup without requiring a full restart of the package, a lot of things cannot. There is an option for automating the restart process, but this still creates a lot of down time in between changes, that only grows as the express portion of the stack grows. So, I guess the big lesson learned here is I really dislike front-end development. Maybe if I continue as a full-stack developer, I’ll look for front-end languages that allow me to easily perform test loops, probably react. Or maybe I’ll just build the entire site in angular (haha). All that aside though, I am happy to be approaching the finish line, and I will continue working on this stack post-graduation and eventually push it to a live environment for my small group of players, and who knows, maybe it’ll grow into something more down the line. I think this is the best path forward for me though, as I can use a live site with real users as a solid portfolio piece to show to potential employers.
+    </p>
+  </main>
+</body>
+</html>

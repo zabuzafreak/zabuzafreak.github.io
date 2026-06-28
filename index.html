@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Peter Krentz ePortfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My ePortfolio</h1>
+    <nav>
+      <a href="index.html">Self-Assessment</a>
+      <a href="code-review.html">Code Review</a>
+      <a href="software-design.html">Software Design Narrative</a>
+      <a href="algorithms.html">Algorithms and Data Structures Narrative</a>
+      <a href="databases.html">Databases Narrative</a>
+      <a href="artifacts.html">Artifacts</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Professional Self-Assessment</h2>
+
+    <p>
+      Working on this capstone project and my ePortfolio has given me the opportunity to sit with a single set of languages and work on something from the ground up. Before working on my capstone project, I never would have thought of myself as pursuing full-stack development. However, I realized that this was my chance to create something of my own that wasn’t just a good portfolio piece, but a full featured website that I can push to live and use to enhance the lives of my small local TCG community (although, we play over discord, and are actually scattered across the world, featuring players from Lithuania, Brazil, and the USA). I don’t know that this has prepared me necessarily for being part of a team shipping features in a company but spending a lot of hands-on time with a codebase with so many moving parts has definitely helped me as a designer and an engineer. I would say that I experienced the most improvement in project structure and architecture.
+    </p>
+    <p>
+	    All enhancements were based upon an initial stack that I created for one of my courses. The codebase then had to be rewritten to be used for my TCG tournament platform. The API layer also had to be completely rewritten as there was nearly zero overlap between the initial use-cases and the final use. Database changes needed to be made to accommodate for the user login system, hosting the brackets themselves, to account for statistics that change over the course of a bracket, and then a persistent leaderboard that is updated based on changes in each bracket. The main use of data structures and algorithms was in the swiss style pairing system that is common in card game tournament formats. The login system was also cleaned up to only display pertinent information to the user based on login state and user role. Previously, the SPA was role agnostic (the API calls would fail, but you could still view the admin page in it’s entirety), and now it properly functions as one would expect.
+    </p>
+  </main>
+</body>
+</html>
